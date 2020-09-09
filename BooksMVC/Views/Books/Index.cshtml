@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Book>
+@{
+	ViewData["Title"] = "Books";
+}
+
+<br />
+<div class="container row p-0 m-0">
+	<div class="col-9">
+		<h2 class="text-info">Books</h2>
+	</div>
+
+	<div class="col-3">
+		<a asp-controller="Books" asp-action="Create" class="btn btn-info form-control text-white">Create New Book</a>
+	</div>
+
+	<div class="col-12 border p-3 mt-3">
+		<form method="post">
+			@if (Model.Any())
+			{
+				<table class="table table-striped border">
+					<tr class="table-secondary">
+						<th>
+							<label asp-for="@Model.FirstOrDefault().Name"></label>
+						</th>
+						<th>
+							@*@Html.DisplayNameFor(m=>m.Books.FirstOrDefault().Author)*@
+							<label asp-for="@Model.FirstOrDefault().Author"></label>
+						</th>
+						<th>
+							<label asp-for="@Model.FirstOrDefault().ISBN"></label>
+						</th>
+						<th>
+
+						</th>
+					</tr>
+					@foreach (var item in Model)
+					{
+						<tr>
+							<td>
+								@*@item.Name*@
+								@Html.DisplayFor(m => item.Name)
+							</td>
+							<td>
+								@Html.DisplayFor(m => item.Author)
+							</td>
+							<td>
+								@Html.DisplayFor(m => item.ISBN)
+							</td>
+							<td>
+								<a asp-controller="Books" asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm text-white">Edit</a>
+								<button asp-action="Delete" asp-route-id="@item.Id" onclick="return confirm('Are you sure you want to delete?')" class="btn btn-danger btn-sm">Delete</button>
+							</td>
+						</tr>
+					}
+				</table>
+			}
+			else
+			{
+				<p>No books available.</p>
+			}
+		</form>
+
+	</div>
+
+</div>

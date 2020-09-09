@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksMVC", "BooksMVC\BooksMVC.csproj", "{2A904D49-C0BB-4CE8-A040-D0096A717704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksRazor", "BooksRazor\BooksRazor.csproj", "{21C38F5C-EC01-4A2B-9766-391DEEBEBE75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A904D49-C0BB-4CE8-A040-D0096A717704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A904D49-C0BB-4CE8-A040-D0096A717704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A904D49-C0BB-4CE8-A040-D0096A717704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A904D49-C0BB-4CE8-A040-D0096A717704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C38F5C-EC01-4A2B-9766-391DEEBEBE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C38F5C-EC01-4A2B-9766-391DEEBEBE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C38F5C-EC01-4A2B-9766-391DEEBEBE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C38F5C-EC01-4A2B-9766-391DEEBEBE75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AEA17DA-C68A-4480-8DA0-6C030312020C}
+	EndGlobalSection
+EndGlobal
